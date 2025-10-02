@@ -23,6 +23,10 @@
 
 </div>
 
+## App Store ## 
+https://apps.apple.com/us/app/habbits/id6746504069
+
+
 ## 📱 앱 소개
 
 **Habbits**는 개인의 습관 형성과 추적을 도와주는 iOS 앱입니다. 직관적인 인터페이스와 강력한 기능으로 여러분의 목표를 달성하는 데 도움을 줍니다.
