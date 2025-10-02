@@ -28,27 +28,7 @@
 - 🌙 **다크 모드**: 눈에 편안한 다크 테마 지원
 - 💾 **로컬 저장**: 데이터는 기기에 안전하게 저장
 
-### 🏗️ 앱 구조
 
-```
-Habbits/
-├── 📱 HabbitsApp.swift          # 앱 진입점
-├── 🎨 ContentView.swift         # 메인 뷰
-├── 📊 Model/
-│   └── Habbit.swift             # 습관 데이터 모델
-├── 🎯 Pages/
-│   ├── HabbitList/              # 습관 목록
-│   ├── HabbitForm/              # 습관 생성/편집
-│   ├── Detail/                   # 습관 상세보기
-│   └── Setting/                 # 설정
-├── 🧩 Components/               # 재사용 가능한 컴포넌트
-├── 🔧 Core/
-│   ├── Extension/               # 확장 기능
-│   └── Storage/                 # 데이터 저장소
-└── 🎨 Assets.xcassets           # 앱 리소스
-```
-
-## 🚀 시작하기
 
 ### 필요 조건
 
