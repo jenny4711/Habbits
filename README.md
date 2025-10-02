@@ -1,22 +1,7 @@
-# 🎯 Habbits - 습관 추적 iOS 앱
-
-<div align="center">
-
-![iOS](https://img.shields.io/badge/iOS-15.0+-blue.svg)
-![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
-![SwiftUI](https://img.shields.io/badge/SwiftUI-3.0-green.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-
-**습관을 만들고, 추적하고, 성취하세요!**
-
-[English](#-habbits---habit-tracking-ios-app) | [한국어](#-habbits---습관-추적-ios-앱)
-
-</div>
-
----
 
 
-## 📱 스크린샷
+
+## 📱 Images
 
 <div align="center">
   <img src="https://github.com/jenny4711/jenny4711/blob/main/gitGrPic.png" width="800"/>
@@ -27,64 +12,7 @@
 https://apps.apple.com/us/app/habbits/id6746504069
 
 
-## 📱 앱 소개
 
-**Habbits**는 개인의 습관 형성과 추적을 도와주는 iOS 앱입니다. 직관적인 인터페이스와 강력한 기능으로 여러분의 목표를 달성하는 데 도움을 줍니다.
-
-### ✨ 주요 기능
-
-- 🎨 **커스터마이징**: 이모지와 색상으로 습관을 개성있게 표현
-- 📊 **진행률 추적**: 일일 체크인과 연속 달성 일수 확인
-- 🔔 **알림 시스템**: 설정한 시간에 습관 실천을 알려주는 푸시 알림
-- 📈 **통계 보기**: 습관별 상세 통계와 진행 상황 확인
-- 🌙 **다크 모드**: 눈에 편안한 다크 테마 지원
-- 💾 **로컬 저장**: 데이터는 기기에 안전하게 저장
-
-
-
-### 필요 조건
-
-- iOS 15.0 이상
-- Xcode 14.0 이상
-- Swift 5.7 이상
-
-
-## 🛠️ 기술 스택
-
-- **언어**: Swift 5.7+
-- **UI 프레임워크**: SwiftUI
-- **아키텍처**: MVVM (Model-View-ViewModel)
-- **데이터 저장**: UserDefaults + Codable
-- **알림**: UserNotifications
-- **의존성 관리**: CocoaPods
-
-
-## 🎯 사용법
-
-### 1. 습관 추가
-- ➕ 버튼을 눌러 새로운 습관을 추가하세요
-- 이모지와 색상을 선택하여 습관을 개성있게 꾸며보세요
-- 알림 시간을 설정하여 매일 습관을 실천할 수 있도록 도움을 받으세요
-
-### 2. 습관 체크인
-- 매일 습관을 완료했을 때 체크 버튼을 눌러주세요
-- 연속 달성 일수가 자동으로 계산됩니다
-
-### 3. 통계 확인
-- 각 습관의 상세 페이지에서 진행 상황을 확인하세요
-- 연속 달성 일수와 전체 달성률을 확인할 수 있습니다
-
-
-
----
-
-<div align="center">
-
-**⭐ 이 프로젝트가 도움이 되었다면 Star를 눌러주세요! ⭐**
-
-</div>
-
----
 
 # 🎯 Habbits - Habit Tracking iOS App
 
