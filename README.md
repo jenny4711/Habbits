@@ -56,26 +56,6 @@ Habbits/
 - Xcode 14.0 이상
 - Swift 5.7 이상
 
-### 설치 방법
-
-1. **저장소 클론**
-   ```bash
-   git clone https://github.com/jenny4711/Habbits.git
-   cd Habbits
-   ```
-
-2. **CocoaPods 의존성 설치**
-   ```bash
-   pod install
-   ```
-
-3. **Xcode에서 프로젝트 열기**
-   ```bash
-   open Habbits.xcworkspace
-   ```
-
-4. **앱 빌드 및 실행**
-   - 시뮬레이터 또는 실제 기기에서 실행
 
 ## 🛠️ 기술 스택
 
@@ -109,28 +89,7 @@ Habbits/
 - 각 습관의 상세 페이지에서 진행 상황을 확인하세요
 - 연속 달성 일수와 전체 달성률을 확인할 수 있습니다
 
-## 🤝 기여하기
 
-이 프로젝트에 기여하고 싶으시다면:
-
-1. 이 저장소를 Fork하세요
-2. 새로운 기능 브랜치를 생성하세요 (`git checkout -b feature/AmazingFeature`)
-3. 변경사항을 커밋하세요 (`git commit -m 'Add some AmazingFeature'`)
-4. 브랜치에 푸시하세요 (`git push origin feature/AmazingFeature`)
-5. Pull Request를 생성하세요
-
-## 📄 라이선스
-
-이 프로젝트는 MIT 라이선스 하에 배포됩니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
-
-## 👨‍💻 개발자
-
-**Ji y LEE**
-- GitHub: [@jenny4711](https://github.com/jenny4711)
-
-## 📞 문의
-
-프로젝트에 대한 질문이나 제안사항이 있으시면 [Issues](https://github.com/jenny4711/Habbits/issues)를 통해 연락해주세요.
 
 ---
 
@@ -172,27 +131,7 @@ Habbits/
 - 🌙 **Dark Mode**: Eye-friendly dark theme support
 - 💾 **Local Storage**: Secure data storage on your device
 
-### 🏗️ App Architecture
 
-```
-Habbits/
-├── 📱 HabbitsApp.swift          # App entry point
-├── 🎨 ContentView.swift         # Main view
-├── 📊 Model/
-│   └── Habbit.swift             # Habit data model
-├── 🎯 Pages/
-│   ├── HabbitList/              # Habit list
-│   ├── HabbitForm/              # Create/Edit habits
-│   ├── Detail/                   # Habit details
-│   └── Setting/                 # Settings
-├── 🧩 Components/               # Reusable components
-├── 🔧 Core/
-│   ├── Extension/               # Extensions
-│   └── Storage/                 # Data storage
-└── 🎨 Assets.xcassets           # App resources
-```
-
-## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -200,26 +139,7 @@ Habbits/
 - Xcode 14.0 or later
 - Swift 5.7 or later
 
-### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/jenny4711/Habbits.git
-   cd Habbits
-   ```
-
-2. **Install CocoaPods dependencies**
-   ```bash
-   pod install
-   ```
-
-3. **Open project in Xcode**
-   ```bash
-   open Habbits.xcworkspace
-   ```
-
-4. **Build and run**
-   - Run on simulator or physical device
 
 ## 🛠️ Tech Stack
 
