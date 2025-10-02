@@ -1,0 +1,16 @@
+PODS:
+  - MCEmojiPicker (1.2.3)
+
+DEPENDENCIES:
+  - MCEmojiPicker
+
+SPEC REPOS:
+  trunk:
+    - MCEmojiPicker
+
+SPEC CHECKSUMS:
+  MCEmojiPicker: 6650cfa8d79fc8d71bf77dbed6166f946cee9c96
+
+PODFILE CHECKSUM: a275d5352696d300adcd2dcef6a657136a019ec2
+
+COCOAPODS: 1.16.2
