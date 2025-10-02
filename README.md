@@ -19,7 +19,7 @@
 ## 📱 스크린샷
 
 <div align="center">
-  <img src="https://github.com/jenny4711/jenny4711/blob/main/gitGrPic.png" width="200"/>
+  <img src="https://github.com/jenny4711/jenny4711/blob/main/gitGrPic.png" width="800"/>
 
 </div>
 
