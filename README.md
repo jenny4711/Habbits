@@ -15,6 +15,14 @@
 
 ---
 
+
+## 📱 스크린샷
+
+<div align="center">
+  <img src="https://github.com/jenny4711/jenny4711/blob/main/gitGrPic.png" width="200"/>
+
+</div>
+
 ## 📱 앱 소개
 
 **Habbits**는 개인의 습관 형성과 추적을 도와주는 iOS 앱입니다. 직관적인 인터페이스와 강력한 기능으로 여러분의 목표를 달성하는 데 도움을 줍니다.
@@ -49,7 +57,7 @@
 ## 📱 스크린샷
 
 <div align="center">
-  <img src="https://via.placeholder.com/200x400/1C1C1E/FFFFFF?text=습관+목록" alt="습관 목록" width="200"/>
+  <img src="https://github.com/jenny4711/jenny4711/blob/main/gitGrPic.png" width="200"/>
   <img src="https://via.placeholder.com/200x400/2B2B2B/FFFFFF?text=습관+추가" alt="습관 추가" width="200"/>
   <img src="https://via.placeholder.com/200x400/8A8990/FFFFFF?text=상세+통계" alt="상세 통계" width="200"/>
 </div>
