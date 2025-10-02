@@ -54,13 +54,6 @@
 - **알림**: UserNotifications
 - **의존성 관리**: CocoaPods
 
-## 📱 스크린샷
-
-<div align="center">
-  <img src="https://github.com/jenny4711/jenny4711/blob/main/gitGrPic.png" width="200"/>
-  <img src="https://via.placeholder.com/200x400/2B2B2B/FFFFFF?text=습관+추가" alt="습관 추가" width="200"/>
-  <img src="https://via.placeholder.com/200x400/8A8990/FFFFFF?text=상세+통계" alt="상세 통계" width="200"/>
-</div>
 
 ## 🎯 사용법
 
