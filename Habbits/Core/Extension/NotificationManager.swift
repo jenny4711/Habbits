@@ -11,13 +11,13 @@ import UserNotifications
 
 // MARK: - Models
 
-/// 알림에 들어갈 데이터(제목/본문)
+
 public struct VerseItem {
-    public let title: String   // 예: "잠언 12장"
-    public let body: String    // 예: 구절 내용
+    public let title: String
+    public let body: String
 }
 
-/// 예약된(대기중) 알림을 앱에서 보여줄 때 쓰는 모델 (선택)
+
 public struct ScheduledAlarm: Identifiable {
     public let id: String
     public let title: String
@@ -29,10 +29,10 @@ public struct ScheduledAlarm: Identifiable {
         let day: Int?
 }
 
-// 알림 스타일 선택지
+
 public enum ReminderStyle {
-    case dailyOnce         // 매일 1회(반복)
-    case threeTimes6h      // 하루 3회(시작시각, +6h, +12h) — "날마다 다른 구절"
+    case dailyOnce
+    case threeTimes6h
 }
 
 // MARK: - Notification Manager
@@ -40,13 +40,13 @@ public enum ReminderStyle {
 final class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     static let shared = NotificationManager()
 
-    /// 앱 시작 시 1번만 호출하세요 (App init 등)
+
     func configure() {
         let center = UNUserNotificationCenter.current()
         center.delegate = self
         center.requestAuthorization(options: [.alert, .badge, .sound]) { _, _ in }
 
-        // 배너 액션: 열기 / 6시간 뒤 다시 / 완료
+     
         let open   = UNNotificationAction(identifier: "OPEN_APP",
                                           title: "열기",
                                           options: [.foreground])
@@ -65,14 +65,14 @@ final class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
         center.setNotificationCategories([category])
     }
 
-    // 포그라운드에서도 배너/사운드/배지 표시
+    
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 willPresent notification: UNNotification,
                                 withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
         completionHandler([.banner, .sound, .badge])
     }
 
-    // 액션 처리 (스누즈/완료)
+
     func userNotificationCenter(_ center: UNUserNotificationCenter,
                                 didReceive response: UNNotificationResponse,
                                 withCompletionHandler completionHandler: @escaping () -> Void) {
@@ -98,9 +98,6 @@ final class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
 
 extension NotificationManager {
 
-    /// 사용하기 쉬운 통합 래퍼
-    /// - dailyOnce: 매일 1회 반복 알림
-    /// - threeTimes6h: 하루 3회(6시간 간격), "매일은 다른 구절"
     func scheduleReminder(style: ReminderStyle,
                           startHour: Int,
                           startMinute: Int,
@@ -142,8 +139,7 @@ extension NotificationManager {
         UNUserNotificationCenter.current().add(req)
     }
 
-    /// ✅ "매일 다른 구절, 하루 3회(시작, +6h, +12h) 같은 구절"로 N일치 예약
-    /// repeats: false로 각 회차를 개별 예약 → 다음 날 다른 구절 가능
+
     func scheduleDaily3x6h_RotatingDays(startHour: Int,
                                         startMinute: Int,
                                         days: Int,
@@ -161,10 +157,10 @@ extension NotificationManager {
         let cal = Calendar.current
         let now = Date()
 
-        removePending(withPrefix: prefix) { // 이전 같은 접두어 예약 정리
+        removePending(withPrefix: prefix) {
             for i in 0..<dayCount {
                 let item = dayItems[i]
-                let base = starts[i] // 해당 날짜의 첫 회차(시작시각)
+                let base = starts[i]
 
                 // 0h, +6h, +12h → 하루 3회(같은 구절)
                 for (slotIdx, offsetH) in [0, 6, 12].enumerated() {

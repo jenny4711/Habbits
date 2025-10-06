@@ -3,8 +3,7 @@
 //  Habbits
 //
 //  Created by Ji y LEE on 5/12/25.
-//
-//import SwiftUICore
+
 import Foundation
 
 
@@ -39,12 +38,7 @@ struct Habbit: Identifiable, Codable, Equatable, Hashable {
     var showCount: Bool
     var showStreak: Bool
     
-    //    mutating func addDidIt(){
-    //        if !didIt.contains(countOfDay){
-    //            didIt.append(countOfDay)
-    //        }
-    //
-    //    }
+  
     
     mutating func addDidIt() {
         if let index = didIt.firstIndex(of: countOfDay) {
@@ -56,19 +50,7 @@ struct Habbit: Identifiable, Codable, Equatable, Hashable {
         }
     }
     
-    
-    //    mutating func updateCountIfNeeded() {
-    //            let calendar = Calendar.current
-    //            let today = calendar.startOfDay(for: Date())
-    //
-    //            if let lastDate = lastUpdatedDate {
-    //                let lastDay = calendar.startOfDay(for: lastDate)
-    //                if let daysPassed = calendar.dateComponents([.day], from: lastDay, to: today).day, daysPassed > 0 {
-    //                    countOfDay += daysPassed
-    //                }
-    //            }
-    //            lastUpdatedDate = today
-    //        }
+ 
     
     mutating func updateCountIfNeeded() {
         let calendar = Calendar.current

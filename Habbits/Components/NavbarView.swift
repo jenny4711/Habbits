@@ -55,9 +55,7 @@ struct DefaultView : View {
   
     var body:some View{
         HStack{
-//            Text("Habbits")
-//                .font(.system(size: 24,weight:.bold))
-//                .foregroundColor(.white)
+
             Spacer()
             Button(action: {
                 rightBtnFunc()
@@ -146,23 +144,7 @@ struct FormNavView :View{
     let leftBtnFunc : () -> Void
     var  body:some View{
         HStack{
-//            Button(action: {
-//                leftBtnFunc()
-//            }, label: {
-//                Circle()
-//                    .fill(Color.signBox)
-//                    .frame(width:32,height:32)
-//                    .overlay(
-//                        Image(systemName: "xmark")
-//                        
-//                            .font(.system(size: 16))
-//                            .foregroundColor(.white)
-//   
-//                    )
-//                  
-//            }
-//                   
-//            )
+
        
             Spacer()
             Button(action: {
@@ -193,23 +175,7 @@ struct SettingNavView :View{
     let leftBtnFunc : () -> Void
     var  body:some View{
         HStack{
-//            Button(action: {
-//                leftBtnFunc()
-//            }, label: {
-//                Circle()
-//                    .fill(Color.signBox)
-//                    .frame(width:32,height:32)
-//                    .overlay(
-//                        Image(systemName: "xmark")
-//                        
-//                            .font(.system(size: 16))
-//                            .foregroundColor(.white)
-//   
-//                    )
-//                  
-//            }
-//                   
-//            )
+
        
             Spacer()
             Button(action: {
@@ -226,7 +192,7 @@ struct SettingNavView :View{
 
         }
         
-//        .background(.black)
+
         .padding(.horizontal,24)
         
     }

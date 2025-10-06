@@ -91,10 +91,7 @@ struct TimePicker: View {
                             .font(.system(size: 30))
                         Spacer()
                      
-//                        if g.hasRepeats { Chip("반복") }
-//                        Text("\(g.count)일") // ← 동일 시각의 '미반복' 예약 개수(=일수)
-//                            .font(.caption)
-//                            .foregroundColor(Color.white)
+
 
                         Button {
                             removeOne(from: g)  // ★ 가장 가까운 1개만 삭제
@@ -104,7 +101,7 @@ struct TimePicker: View {
                                 .frame(width:25,height:25)
                             
                         }
-//                        .buttonStyle(.borderless))
+
 
                         Menu {
                             Button("이 시각의 예약 모두 삭제", role: .destructive) {
@@ -135,13 +132,13 @@ struct TimePicker: View {
     // MARK: - 그룹 모델 & 로직
 
     struct TimeGroup: Identifiable {
-        let id: String              // "HH:mm"
+        let id: String
         let hour: Int
         let minute: Int
         var hasRepeats: Bool
-        let count: Int              // 미반복(날짜 지정) 예약 개수
-        let nonRepeatingIDs: [String]  // 날짜 지정 예약(가까운 순)
-        let repeatingIDs: [String]     // repeats=true 예약
+        let count: Int
+        let nonRepeatingIDs: [String]
+        let repeatingIDs: [String]
         let title:String
     }
 
@@ -184,13 +181,13 @@ struct TimePicker: View {
     }
 
     private func removeOne(from group: TimeGroup) {
-        // 가장 가까운 '미반복' 1건 제거 (없으면 반복 1건 제거)
+   
         if let id = group.nonRepeatingIDs.first {
             NotificationManager.shared.cancel(id: id)
         } else if let id = group.repeatingIDs.first {
             NotificationManager.shared.cancel(id: id)
         }
-        // 약간의 지연 후 리로드(비동기 반영)
+       
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.15) { reload() }
     }
 
@@ -267,6 +264,3 @@ func addNotification(for hour:Int,min:Int?){
 
 
 
-//#Preview {
-//    TimePicker(hr: <#Binding<Int>#>, m: <#Binding<Int>#>, setAlerm: <#Binding<Bool>#>)
-//}

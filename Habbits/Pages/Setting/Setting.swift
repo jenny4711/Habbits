@@ -258,9 +258,7 @@ struct DeleteBtnViewEdit: View{
                
                 if habbitListViewModel.loading{
                     Spinner()
-//                    Text("hold.....")
-//                        .font(.system(size: 14,weight:.black))
-//                        .foregroundColor(.red)
+
                 }else{
                     Text("Delete")
                         .font(.system(size: 14,weight:.black))
@@ -286,11 +284,6 @@ struct DeleteBtnViewEdit: View{
 
 
 
-
-
-
-
-
 struct SettingPreviewWrapper: View {
     @State var habbit = Habbit( // ✅ 바인딩을 가능하게 하려면 @State로 직접 소유해야 함
         id: UUID(),
@@ -306,7 +299,7 @@ struct SettingPreviewWrapper: View {
     )
 
     var body: some View {
-        Setting(habbitFormViewModel: HabitFormViewModel(), habbit: $habbit)  // ✅ 바인딩 가능
+        Setting(habbitFormViewModel: HabitFormViewModel(), habbit: $habbit)
             .environmentObject(HabbitListViewModel())
     }
 }

@@ -142,7 +142,7 @@ struct HabbitListCellView:View{
         .cornerRadius(20)
         .background(
             Color.cellViewBlackBK
-                .cornerRadius(20)  // ✅ 배경 자체에 radius 적용
+                .cornerRadius(20)
         )
       
         
@@ -162,7 +162,7 @@ struct HabbitListCellView:View{
                     .fill(Color.signBox)
                     .frame(width:40,height:40)
                     .overlay(
-                        //                    Text("😍")
+                   
                         Text("\(habbit.emoji)")
                     )
                 
@@ -234,8 +234,7 @@ struct HabbitListCellView:View{
     struct HabbitListCellBottom:View{
         var habbit :Habbit
         
-//        let countOfDay:Int = 24
-//        let columns = Array(repeating: GridItem(.fixed(20), spacing: 3), count: 14)
+
         let columns = Array(repeating: GridItem(.flexible(), spacing: 3), count: 14)
         
             var countOfDay: Int {

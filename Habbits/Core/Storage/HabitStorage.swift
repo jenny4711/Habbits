@@ -7,16 +7,7 @@
 
 import Foundation
 
-//struct Habit: Identifiable, Codable {
-//    var id = UUID()
-//    var name: String
-//    var countOfDay: Int
-//    var didIt: [Int]
-//    var emoji: String
-//    var colorHex: String
-//    var showCount: Bool
-//    var showStreak: Bool
-//}
+
 
 // MARK: - Habit 저장소
 class HabitStorage: ObservableObject {

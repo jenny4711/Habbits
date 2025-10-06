@@ -94,7 +94,7 @@ struct DetailView: View {
     struct HabbitListCellBottom:View{
         var habbit :Habbit
         
-//        let countOfDay:Int = 26
+
         
         let columns = Array(repeating: GridItem(.flexible(), spacing: 3), count: 14)
         

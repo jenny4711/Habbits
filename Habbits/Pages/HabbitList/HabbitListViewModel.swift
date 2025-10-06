@@ -73,7 +73,7 @@ extension HabbitListViewModel{
     }
     
     func removeItem(_ id:UUID){
-//        habbits.removeAll(where: {$0.name == name})
+
 
         let indexes = habbits.enumerated()
             .filter{$0.element.id == id}
