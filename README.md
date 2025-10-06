@@ -1,148 +1,20 @@
-# 🎯 Habbits - 습관 추적 iOS 앱
-
-<div align="center">
-
-![iOS](https://img.shields.io/badge/iOS-15.0+-blue.svg)
-![Swift](https://img.shields.io/badge/Swift-5.0-orange.svg)
-![SwiftUI](https://img.shields.io/badge/SwiftUI-3.0-green.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
-
-**습관을 만들고, 추적하고, 성취하세요!**
-
-[English](#-habbits---habit-tracking-ios-app) | [한국어](#-habbits---습관-추적-ios-앱)
-
-</div>
-
----
-
-## 📱 앱 소개
-
-**Habbits**는 개인의 습관 형성과 추적을 도와주는 iOS 앱입니다. 직관적인 인터페이스와 강력한 기능으로 여러분의 목표를 달성하는 데 도움을 줍니다.
-
-### ✨ 주요 기능
-
-- 🎨 **커스터마이징**: 이모지와 색상으로 습관을 개성있게 표현
-- 📊 **진행률 추적**: 일일 체크인과 연속 달성 일수 확인
-- 🔔 **알림 시스템**: 설정한 시간에 습관 실천을 알려주는 푸시 알림
-- 📈 **통계 보기**: 습관별 상세 통계와 진행 상황 확인
-- 🌙 **다크 모드**: 눈에 편안한 다크 테마 지원
-- 💾 **로컬 저장**: 데이터는 기기에 안전하게 저장
-
-### 🏗️ 앱 구조
-
-```
-Habbits/
-├── 📱 HabbitsApp.swift          # 앱 진입점
-├── 🎨 ContentView.swift         # 메인 뷰
-├── 📊 Model/
-│   └── Habbit.swift             # 습관 데이터 모델
-├── 🎯 Pages/
-│   ├── HabbitList/              # 습관 목록
-│   ├── HabbitForm/              # 습관 생성/편집
-│   ├── Detail/                   # 습관 상세보기
-│   └── Setting/                 # 설정
-├── 🧩 Components/               # 재사용 가능한 컴포넌트
-├── 🔧 Core/
-│   ├── Extension/               # 확장 기능
-│   └── Storage/                 # 데이터 저장소
-└── 🎨 Assets.xcassets           # 앱 리소스
-```
-
-## 🚀 시작하기
-
-### 필요 조건
-
-- iOS 15.0 이상
-- Xcode 14.0 이상
-- Swift 5.7 이상
-
-### 설치 방법
-
-1. **저장소 클론**
-   ```bash
-   git clone https://github.com/jenny4711/Habbits.git
-   cd Habbits
-   ```
-
-2. **CocoaPods 의존성 설치**
-   ```bash
-   pod install
-   ```
-
-3. **Xcode에서 프로젝트 열기**
-   ```bash
-   open Habbits.xcworkspace
-   ```
-
-4. **앱 빌드 및 실행**
-   - 시뮬레이터 또는 실제 기기에서 실행
-
-## 🛠️ 기술 스택
-
-- **언어**: Swift 5.7+
-- **UI 프레임워크**: SwiftUI
-- **아키텍처**: MVVM (Model-View-ViewModel)
-- **데이터 저장**: UserDefaults + Codable
-- **알림**: UserNotifications
-- **의존성 관리**: CocoaPods
-
-## 📱 스크린샷
-
-<div align="center">
-  <img src="https://via.placeholder.com/200x400/1C1C1E/FFFFFF?text=습관+목록" alt="습관 목록" width="200"/>
-  <img src="https://via.placeholder.com/200x400/2B2B2B/FFFFFF?text=습관+추가" alt="습관 추가" width="200"/>
-  <img src="https://via.placeholder.com/200x400/8A8990/FFFFFF?text=상세+통계" alt="상세 통계" width="200"/>
-</div>
-
-## 🎯 사용법
-
-### 1. 습관 추가
-- ➕ 버튼을 눌러 새로운 습관을 추가하세요
-- 이모지와 색상을 선택하여 습관을 개성있게 꾸며보세요
-- 알림 시간을 설정하여 매일 습관을 실천할 수 있도록 도움을 받으세요
-
-### 2. 습관 체크인
-- 매일 습관을 완료했을 때 체크 버튼을 눌러주세요
-- 연속 달성 일수가 자동으로 계산됩니다
-
-### 3. 통계 확인
-- 각 습관의 상세 페이지에서 진행 상황을 확인하세요
-- 연속 달성 일수와 전체 달성률을 확인할 수 있습니다
-
-## 🤝 기여하기
-
-이 프로젝트에 기여하고 싶으시다면:
-
-1. 이 저장소를 Fork하세요
-2. 새로운 기능 브랜치를 생성하세요 (`git checkout -b feature/AmazingFeature`)
-3. 변경사항을 커밋하세요 (`git commit -m 'Add some AmazingFeature'`)
-4. 브랜치에 푸시하세요 (`git push origin feature/AmazingFeature`)
-5. Pull Request를 생성하세요
-
-## 📄 라이선스
-
-이 프로젝트는 MIT 라이선스 하에 배포됩니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
-
-## 👨‍💻 개발자
-
-**Ji y LEE**
-- GitHub: [@jenny4711](https://github.com/jenny4711)
-
-## 📞 문의
-
-프로젝트에 대한 질문이나 제안사항이 있으시면 [Issues](https://github.com/jenny4711/Habbits/issues)를 통해 연락해주세요.
-
----
-
-<div align="center">
-
-**⭐ 이 프로젝트가 도움이 되었다면 Star를 눌러주세요! ⭐**
-
-</div>
-
----
-
 # 🎯 Habbits - Habit Tracking iOS App
+
+
+## 📱 Images
+
+<div align="center">
+  <img src="https://github.com/jenny4711/jenny4711/blob/main/gitGrPic.png" width="800"/>
+
+</div>
+
+## App Store ## 
+https://apps.apple.com/us/app/habbits/id6746504069
+
+
+
+
+
 
 <div align="center">
 
@@ -172,27 +44,7 @@ Habbits/
 - 🌙 **Dark Mode**: Eye-friendly dark theme support
 - 💾 **Local Storage**: Secure data storage on your device
 
-### 🏗️ App Architecture
 
-```
-Habbits/
-├── 📱 HabbitsApp.swift          # App entry point
-├── 🎨 ContentView.swift         # Main view
-├── 📊 Model/
-│   └── Habbit.swift             # Habit data model
-├── 🎯 Pages/
-│   ├── HabbitList/              # Habit list
-│   ├── HabbitForm/              # Create/Edit habits
-│   ├── Detail/                   # Habit details
-│   └── Setting/                 # Settings
-├── 🧩 Components/               # Reusable components
-├── 🔧 Core/
-│   ├── Extension/               # Extensions
-│   └── Storage/                 # Data storage
-└── 🎨 Assets.xcassets           # App resources
-```
-
-## 🚀 Getting Started
 
 ### Prerequisites
 
@@ -200,26 +52,7 @@ Habbits/
 - Xcode 14.0 or later
 - Swift 5.7 or later
 
-### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/jenny4711/Habbits.git
-   cd Habbits
-   ```
-
-2. **Install CocoaPods dependencies**
-   ```bash
-   pod install
-   ```
-
-3. **Open project in Xcode**
-   ```bash
-   open Habbits.xcworkspace
-   ```
-
-4. **Build and run**
-   - Run on simulator or physical device
 
 ## 🛠️ Tech Stack
 
